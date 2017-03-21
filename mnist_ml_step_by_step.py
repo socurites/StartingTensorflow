@@ -35,7 +35,7 @@ W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 
 # define soft max funciton for output layer
-y = tf.nn.softmax(tf.matmul(x, W) + b)
+y = tf.matmul(x, W) + b
 
 # crate variable for real y
 y_ = tf.placeholder(tf.float32, [None, 10])
